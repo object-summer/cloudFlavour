@@ -1,0 +1,65 @@
+.ui_title{height:35px;border-bottom:1px solid #eeeeee;position:relative}
+.ui_title_wrap{line-height:30px;font-size:20px}
+
+.ui_title_wrap h1,.ui_title_wrap h2,.ui_title_wrap h3{float:left;font-weight:400;display:inline-block;font-size:20px;margin-right:20px;color:#666;padding-bottom:4px;outline:0;color:#333;max-width:100%;overflow:hidden;text-decoration:none;text-overflow:ellipsis;white-space:nowrap}
+.ui_title_wrap h1 a,.ui_title_wrap h2 a,.ui_title_wrap h3 a{color:#666}
+.ui_title_wrap h1.on,.ui_title_wrap h2.on,.ui_title_wrap h3.on{color:#ffa539;border-bottom:3px solid #ffa539}
+.ui_title_wrap h1.on a,.ui_title_wrap h2.on a,.ui_title_wrap h3.on a{color:#ffa539}
+.ui_title_wrap a.on{color:#ff6767}
+.ui_title_wrap a{text-decoration:none}
+.ui_title_wrap .right{float:right;margin:0 0 0 20px;font-size:16px}
+.ui_title_wrap span.right{color:#999}
+
+.ui_no_data{font-size:24px;padding:100px;padding-right:0;color:#999;}
+.ui_no_data a,.ui_no_data a:hover{color:#6599ff;padding:05px;}
+
+.ui-loading{height:44px;line-height:44px;overflow:hidden}
+.ui-loading a{display:block;border-radius:5px;text-align:center;font-size:18px;color:#ff6767;background-color:#f8f8f8;outline:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;-moz-transition:color .3s ease-in-out .3s,background-color .3s ease-in-out .3s;-o-transition:color .3s ease-in-out .3s,background-color .3s ease-in-out .3s;-ms-transition:color .3s ease-in-out .3s,background-color .3s ease-in-out .3s;transition:color .3s ease-in-out .3s,background-color .3s ease-in-out .3s}
+.ui-loading a:hover{background-color:#ff8d8d;color:#fff;text-decoration:none}
+.ui-loading a.on{cursor:default;background:url(http://static.meishichina.com/v6/img/loading-16-16.gif) no-repeat center center #f9f9f9;text-indent:-9999em}
+li.feed{display:none}
+
+.mo{font-size:20px;color:#333
+font-size:20px;line-height:20px;padding:20px 0 20px 25px;background:rgba(0,0,0,0) url(http://static.meishichina.com/v6/img/mo.png) no-repeat scroll left center}
+.mo *{color:#333}
+.mo a:hover{color:#ff6767;text-decoration:none}
+
+.space_left{width:640px;float:left;}
+.space_right{width:300px;float:right;}
+
+.ui_newlist_1 li{clear:both;padding:0 0 20px 0}
+.ui_newlist_1 li h2{padding:3px 0 10px;font-size:20px}
+.ui_newlist_1 li h2 em{color:#ba2020;font-style:normal}
+.ui_newlist_1 .pic{float:left;overflow:hidden;margin:20px 0 0;width:180px;height:180px;}
+.ui_newlist_1 .pic a img {width: 100%;height: 100%;vertical-align: top;}
+.ui_newlist_1 .detail{padding:20px 0 0 200px;color:#666}
+.ui_newlist_1 .detail p{font-size:14px}
+.ui_newlist_1 .subline{padding:0 0 2px 0;color:#999}
+.ui_newlist_1 .subline a{color:#999}
+.ui_newlist_1 .subcontent{color:#333}
+.ui_newlist_1 .substatus{padding:20px 0 0;line-height:30px}
+.ui_newlist_1 .substatus .left,.ui_newlist_1 .substatus .left a{color:#999}
+
+.ui_newlist_1 .get_nums{color:#999}
+ 
+.ui_newlist_1 .substatus a.right:hover{background:#ff6767;color:#fff;text-decoration:none}
+.ui_newlist_1 li img{-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out}
+.ui_newlist_1 li:hover img{-webkit-transform:scale(1.1,1.1);-moz-transform:scale(1.1,1.1);-o-transform:scale(1.1,1.1);transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1)}
+.list_blog li .pic{height:135px}
+
+.ui_newlist_1 a.do_luck,.ui_newlist_1 a.do_luck2{float:right;margin:5px 0 0 0;padding:0 25px;height:30px;border:1px solid #ff6767;border-radius:15px;color:#ff6767;text-decoration:none;font-size:14px;line-height:30px}
+.ui_newlist_1 a.do_luck2{cursor:default}
+.ui_newlist_1 a.do_luck:hover{background:#ff6767 none repeat scroll 0 0;color:#fff;text-decoration:none}
+.ui_newlist_1 a.gray{float:right;margin:5px 0 0 0;padding:0 25px;height:30px;border:1px solid #999;border-radius:15px;color:#999;text-decoration:none;font-size:14px;line-height:30px;cursor:default}
+.zhen_r_list li{clear:both;padding:15px 0 0}
+.zhen_r_list li .pic{float:left; width: 60px;height: 60px;display: block;}
+.zhen_r_list li .pic img {height: 100%;height: 100%;}
+.zhen_r_list li p{padding:0 0 0 70px}
+.zhen_r_list li p a{font-size:14px;line-height:1.2em}
+.zhen_r_list li p a em{color:#999;font-style:normal}
+.zhen_r_list li p a:hover em{color:#ff6767}
+.zhen_r_list li p span{color:#999}
+.zhen_r_list li p b{color:#666;text-decoration:line-through}
+.zhen_r_list a.do{float:right;display:block;padding:0 10px;height:20px;border:1px solid #ff6767;border-radius:10px;color:#ff6767;text-decoration:none;font-size:12px;line-height:20px}
+.zhen_r_list a.do:hover{background:#ff6767;color:#fff;text-decoration:none}
+.zhen_r_list li img.imgLoad{display:block;width:60px;height:60px;background:#f2f2f2 url(http://static.meishichina.com/v6/img/loading-16-16.gif) no-repeat scroll center center}

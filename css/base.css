@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Base Reset */
+*{margin: 0;padding: 0;}
+body,ul,ol,li,img{margin:0;padding:0;list-style:none;list-style-type: none;color: #000}
+a{text-decoration: none;color: #000}
+/*a:hover{color: #d89168;}*/
+i,em,strong,th{font-style: normal;font-weight: normal;}
+body,p {   Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial; }
+img {border: 0px;vertical-align:middle;-ms-interpolation-mode: bicubic;}
+input,select,option,textarea{outline: none;}
+.clear { width:100%;overflow:hidden; clear:both; display:block; _display:inline;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;/*IE/7/6*/}
+.left {float: left;}
+.right {float: right;}
+.yahei {font: "微软雅黑";}
+.cl{clear: both;}
+.none{display: none;}
+.block{display: block;}
+.w1200{width: 1200px;}
+.w1140{width: 1140px;}
+.w1000{width: 1000;}
+/*.w1140_inner{width: 1140px;margin: 0 auto;}*/
+.close {display: none;}
+.on {display: block;}
+
+
+/*新添加的bass.css样式*/
+.gd_wrap {width: 100%;}
+.gd_inner {margin: 0 auto;width: 1200px;}
+.gd_inner_1000 {margin: 0 auto;width: 1000px;}
+
+/*菜系tab*/
+.tab_bgcblue {
+	color: #d89168!important;
+	border-bottom: 2px solid #ffa539;
+} 
+.bgcblue {
+	color: #ffa539!important;
+}
+/*tab颜色变化*/
+.orangecolor{color:#ffa539!important;}
+.orangebgcolor{background-color: #ffa539!important; color: #FFFFFF;}
+.brownbgcolor{background-color:#d89168!important;color: #FFFFFF;}
+.browncolor {color:#d89168!important;}
+.whitebg{background-color: #FFFFFF;}
+.mr5 {margin-right: 5px!important;}
+.ml5 {margin-left: 5px!important;}
+.mb20{margin-bottom: 20px;}
+.mt20{margin-top: 20px;}
+.mr0{margin-right: 0!important;}
+.mb0{margin-bottom: 0!important;}
+.align-baseline {vertical-align: baseline;}
+.display-block {display: block;}
+.button, .button:hover {color: #fff;background-color: #ffcc01;}
+.gray-font {color: #909090;}
+.box-shadow{border-radius: 5px;box-shadow: 0 1px 2px rgba(26,26,26,.1);box-sizing: border-box; -webkit-font-smoothing: subpixel-antialiased;}
+input[type=button] {display: block;float: right;margin-right: 48px;width: 80px;height: 40px;color: #FFFFFF;font-size: 18px;letter-spacing: 4px;background-color: #d5885c;	border: none;border-radius: 5px;}

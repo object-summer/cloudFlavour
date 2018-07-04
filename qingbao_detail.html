@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="keywords" content="寻找美食,文化,食谱，美食秀,顽食网">
+		<meta name="description" content="顽食网是一个专业的美食文化网站。提供丰富的菜谱、食谱、菜谱大全；学做菜、秀美食，与兴趣相投的好友在美食圈相遇。">
+		<title>顽食网 -美食情报局！</title>
+		<link rel="shortcut icon" href="xiangha.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/othercss/list.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+		<script src="js/tast.js" type="text/javascript"></script>
+		<style type="text/css">
+			.main_w {
+				width: 100%;
+				position: relative;
+				z-index: 500;
+			}
+			
+			.main {
+				width: 990px;
+				margin: 0px auto;
+			}
+			
+			.bbtitles {
+				height: 120px;
+				line-height: 120px;
+				font-size: 24px;
+				color: #222;
+				text-align: center;
+				font-family: Microsoft Yahei;
+				position: relative;
+				display: block;
+			}
+			.gopage{display:inline-block;vertical-align:top;*display:inline;*zoom:1;font-size:14px;color:#666;}
+			.gopage form{display:inline-block;vertical-align:top;*display:inline;*zoom:1;font-size:14px;color:#666;}
+			.gopage input.text{height:38px;line-height:38px;border:1px solid #f5f5f5;background:#fff;width:38px;text-align:center;color:#666;font-size:14px;}
+			.gopage input.submit{height:38px;line-height:34px;border:1px solid #eee;background:#f5f5f5;width:50px;text-align:center;color:#666;font-size:14px;cursor:pointer;}
+			.gopage input.submit:hover{background:#ff3232;color:#fff;border:1px solid #ff3232;}
+		</style>
+	</head>
+
+	<body>
+		<div class="header gd_wrap">
+			<div class="header_wrap gd_inner">
+				<!--logo-->
+				<div class="header_logo" style="cursor: pointer;" onclick="window.location='index.html';">
+					<img src="images/index/logo.png" />
+				</div>
+				<!--搜索框-->
+				<div class="header_search">
+					<div class="header_search_wrap clearfix">
+						<div class="header_search_form">
+							<form action="" method="post">
+								<input type="text" class="text" name="" id="gd_Search" placeholder="请输入菜谱|美食|游记" />
+								<div class="header_search_img" id="gd_Search_img">
+									<img src="images/index/header_search_img.png" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--nav导航-->
+				<div class="header_nav">
+					<ul class="header_nav_ul">
+						<li>
+							<a href="javascript:void(0)">首页</a>
+						</li>
+						<li class="header_nav_li2">
+							<a href="javascript:void(0)">社交</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">美食</a>
+						</li>
+					</ul>
+					<!--这是二级菜单-->
+					<div class="second_menu clearfix">
+						<div class="index_menu second_menus">
+							<ul>
+								<li>
+									<a href="index.html">首页</a>
+								</li>
+								<li>
+									<a href="movie.html">视频</a>
+								</li>
+								<li>
+									<a href="active_datil.html">活动</a>
+								</li>
+								<li>
+									<a href="qingbao_detail.html">趣闻</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social_menu second_menus">
+							<ul>
+								<li>
+									<a href="social.html">知否</a>
+								</li>
+								<li>
+									<a href="show.html">show</a>
+								</li>
+								<li>
+									<a href="qingbao_detail.html">情报局</a>
+								</li>
+							</ul>
+						</div>
+						<div class="food_menu second_menus">
+							<ul>
+								<li>
+									<a href="food.html">无肉不欢</a>
+								</li>
+								<li>
+									<a href="zhuanji.html">素食达人</a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">家的味道</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!--用户头像-->
+				<div class="gd_user">
+					<div class="gd_userpic" id="gd_userpic">
+						<img src="images/index/user01.jpg" />
+					</div>
+					<div class="gd_user_details" id="gd_user_details">
+						<span class="Popover-arrow Popover-arrow--bottom" style="left: 59px; top: 0px;"></span>
+						<a class="gd_user_home gd_item" href="home.html">我的主页</a>
+						<a class="gd_user_install gd_item" href="javascript:void(0)">设置</a>
+						<a class="gd_user_quit gd_item" href="javascript:void(0)">退出</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/gd_dead-->
+		<!--清除上下浮动-->
+		<div class="cl"></div>
+
+		<!--轮播图-->
+		<div class="main_w clearfix">
+			<div class="main">
+				<strong class="bbtitles">最常用的就是最实用的</strong>
+				<div class="ztlist_style1 clearfix" id="ztlist_style1_index">
+					<div id="index_cd_leftarrow"></div>
+					<div id="index_cd_leftarrow_mask"></div>
+					<div id="index_cd_rightarrow"></div>
+					<div id="index_cd_rightarrow_mask"></div>
+					<div class="ztlist_style1_item_w" id="ztlist_style1_item_w">
+						<div class="ztlist_style1_item_ww" id="ztlist_style1_item_ww">
+							<div class="ztlist_style1_item_w1">
+								<div class="ztlist_style1_item">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/baike.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">一日三餐如何吃才正确...</a></strong>
+													<p>一份科学的“吃饭时间表”推荐给你!</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/niurou.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">牛肉怎么做才又好吃软...</a></strong>
+													<p>牛肉好吃又软烂的秘诀</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mr0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/jiutui.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">鸡腿别再油炸了，吃法...</a></strong>
+													<p>鸡腿别再油炸了</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/yutang.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">7个技巧教你做鱼汤，...</a></strong>
+													<p>鱼汤要鲜不要腥</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/baike.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">晚餐这么吃，最不容易...</a></strong>
+													<p>晚餐这么吃，最不容易发胖！</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mr0 mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/dongzhi.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">冬至为什么要吃饺子 ...</a></strong>
+													<p>冬至为什么要吃饺子</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="ztlist_style1_item_w1">
+								<div class="ztlist_style1_item">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/baike.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">一日三餐如何吃才正确...</a></strong>
+													<p>一份科学的“吃饭时间表”推荐给你!</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/niurou.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">牛肉怎么做才又好吃软...</a></strong>
+													<p>牛肉好吃又软烂的秘诀</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mr0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/jiutui.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">鸡腿别再油炸了，吃法...</a></strong>
+													<p>鸡腿别再油炸了</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/yutang.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">7个技巧教你做鱼汤，...</a></strong>
+													<p>鱼汤要鲜不要腥</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="qingbao_detail01.html" class="img"><img src="images/food/qs/baike.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="qingbao_detail01.html">晚餐这么吃，最不容易...</a></strong>
+													<p>晚餐这么吃，最不容易发胖！</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mr0 mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="javascript:void(0);" class="img"><img src="images/food/qs/dongzhi.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="javascript:void(0);">冬至为什么要吃饺子 ...</a></strong>
+													<p>冬至为什么要吃饺子</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="ztlist_style1_item_w1">
+								<div class="ztlist_style1_item">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="javascript:void(0);" class="img"><img src="images/food/qs/baike.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="javascript:void(0);">一日三餐如何吃才正确...</a></strong>
+													<p>一份科学的“吃饭时间表”推荐给你!</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="javascript:void(0);" class="img"><img src="images/food/qs/niurou.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="javascript:void(0);">牛肉怎么做才又好吃软...</a></strong>
+													<p>牛肉好吃又软烂的秘诀</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mr0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="javascript:void(0);" class="img"><img src="images/food/qs/jiutui.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="javascript:void(0);">鸡腿别再油炸了，吃法...</a></strong>
+													<p>鸡腿别再油炸了</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="javascript:void(0);" class="img"><img src="images/food/qs/yutang.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="javascript:void(0);">7个技巧教你做鱼汤，...</a></strong>
+													<p>鱼汤要鲜不要腥</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="javascript:void(0);" class="img"><img src="images/food/qs/baike.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="javascript:void(0);">晚餐这么吃，最不容易...</a></strong>
+													<p>晚餐这么吃，最不容易发胖！</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ztlist_style1_item mr0 mb0">
+									<ul class="ztlist_style1_item_list clearfix">
+										<li class="current clearfix">
+											<div class="topzt">
+												<a target="_blank" href="javascript:void(0);" class="img"><img src="images/food/qs/dongzhi.jpg"><span class="fixer"></span></a>
+												<div class="c">
+													<strong class="title"><a target="_blank" href="javascript:void(0);">冬至为什么要吃饺子 ...</a></strong>
+													<p>冬至为什么要吃饺子</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ztlist_cur" id="ztlist_cur">
+					<span class="current"></span>
+					<span class=""></span>
+					<span class=""></span>
+				</div>
+				<div class="bbtitles" id="bbtitles">
+					菜单是你的一桌饭
+					<span class="paixu_cd">
+						<a class="l_n current" href="javascript:void(0);">最新</a>　
+						<a class="l_n" href="javascript:void(0);">最热</a>　
+						<a class="l_n" href="javascript:void(0);">官方菜单</a>
+					</span>
+				</div>
+				<div class="cdlist_main" id="cdlist">
+					<span class="loading">加载中...</span>
+					<div class="cdlist_w cdlist_w_current" po="1">
+						<div class="cdlist_item_style1 clearfix">
+							<h3><a href="javascript:void(0);">我的菜单</a></h3>
+							<span class="cpcount"><em>20</em>篇菜谱</span>
+							<div class="info">
+								<dl>
+									<dd><strong class="tag">2017-02-21 19:23</strong></dd>
+								</dl>
+								<a class="author" href="home.html">
+									<img src="images/social/users_face.png">
+									<strong>MsChee</strong>
+								</a>
+							</div>
+							<ul class="cplist">
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/chaofan.jpg">
+										<h4>蛋炒饭</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/chaofan01.jpg">
+										<h4>蛋炒饭</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou01.jpg">
+										<h4>燕麦玉米米糊</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou02.jpg">
+										<h4>香蕉牛奶</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/xiangjiao.jpg">
+										<h4>牛奶香蕉泥</h4></a>
+								</li>
+							</ul>
+						</div>
+						<div class="cdlist_item_style1 clearfix">
+							<h3>
+								<a href="javascript:void(0);">素菜  炒菜</a>
+							</h3>
+							<span class="cpcount"><em>33</em>篇菜谱</span>
+							<div class="info">
+								<dl>
+									<dd><strong class="tag">2017-07-04 00:03</strong></dd>
+								</dl>
+								<a class="author" href="home.html">
+									<img src="images/index/userpic.png">
+									<strong>Youareysunshine</strong>
+								</a>
+							</div>
+							<ul class="cplist">
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/yutang.jpg">
+										<h4>菌菇汤</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou03.jpg">
+										<h4>红烧茄子</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou02.jpg">
+										<h4>酱汁煎蛋</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou04.jpg">
+										<h4>冬菇鸡腿</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/doufu.jpg">
+										<h4>贵妃豆腐</h4></a>
+								</li>
+							</ul>
+						</div>
+						<div class="cdlist_item_style1 clearfix">
+							<h3><a href="javascript:void(0);">肉类     炒菜  </a></h3>
+							<span class="cpcount"><em>53</em>篇菜谱</span>
+							<div class="info">
+								<dl>
+									<dd><strong class="tag">2017-07-04 00:03</strong></dd>
+								</dl>
+								<a class="author" href="home.html"><img src="images/food/qs/main/zhou03.jpg"><strong>Youareysunshine</strong></a>
+							</div>
+							<ul class="cplist">
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou03.jpg">
+										<h4>香浓软糯红烧肉</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou02.jpg">
+										<h4>牙签肉</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou01.jpg">
+										<h4>青椒牛肉粒</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/yutang.jpg">
+										<h4>过油肉</h4></a>
+								</li>
+								<li>
+									<a href="qingbao_detail01.html">
+										<img src="images/food/qs/main/zhou02.jpg">
+										<h4>彩椒鸡丝</h4></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--页码page-->
+				<div class="zj_content_bottoms_page cl">
+					<ul>
+						<li>
+							<span class="page_on">1</span>
+						</li>
+						<li>
+							<span>2</span>
+						</li>
+						<li>
+							<span class="page_next">下一页</span>
+						</li>
+					</ul>
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>
+
+		<div class="cl"></div>
+				<div class="cl"></div>
+		<!--gd_footer-->
+		<div class="footer gd_wrap">
+			<div class="foot mt20">
+				<div>
+					<h2 class="foot_h2"> 美食让我们相遇</h2>
+					<p class="">关注我们 
+						<img src="" alt="">
+					</p> 
+					<div  class="foot_hs">
+						<p>云味道：&nbsp;安徽省合肥市巢湖学院&nbsp;|&nbsp;美食开发组&nbsp;|&nbsp;1936256927@qq.com&nbsp;|&nbsp;最终解释权归本组开发人员所有</p>
+						<p>小组成员&nbsp;:|&nbsp;涂珍、陶勇、韩鸣</p>
+				 		<p>开发日期&nbsp;:|&nbsp;2018.3.6~2018.3.28</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部和显示菜单版块-->
+		<div class="scroll_top" id="scroll_top">
+			<div class="scroll_top_nav" id="scroll_top_nav">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="food.html">发现</a>
+					</li>
+					<li>
+						<a href="social.html">社交</a>
+					</li>
+				</ul>
+			</div>
+			<div class="scroll_top_back">
+				<img src="images/index/scroll_top.png" />
+			</div>
+		</div>
+	</body>
+
+</html>

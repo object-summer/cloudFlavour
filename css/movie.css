@@ -1,0 +1,263 @@
+/*----------- 边框动画---  添加同样效果只需在最大块级元素加上类名  bk-dh 即可---*/
+@-webkit-keyframes bg {
+    0% {
+        background-size: 0 8px, 8px 0, 0 8px, 8px 0;
+    }
+    25% {
+        background-size: 100% 8px, 8px 0, 0 8px, 8px 0;
+    }
+    50% {
+        background-size: 100% 8px, 8px 100%, 0 8px, 8px 0;
+    }
+    75% {
+        background-size: 100% 8px, 8px 100%, 100% 8px, 8px 0;
+    }
+    100% {
+        background-size: 100% 8px, 8px 100%, 100% 8px, 8px 100%;
+    }
+}
+@keyframes bg {
+    0% {
+        background-size: 0 8px, 8px 0, 0 8px, 8px 0;
+    }
+    25% {
+        background-size: 100% 8px, 8px 0, 0 8px, 8px 0;
+    }
+    50% {
+        background-size: 100% 8px, 8px 100%, 0 8px, 8px 0;
+    }
+    75% {
+        background-size: 100% 8px, 8px 100%, 100% 8px, 8px 0;
+    }
+    100% {
+        background-size: 100% 8px, 8px 100%, 100% 8px, 8px 100%;
+    }
+}
+.bk-dh:hover{
+width: 100%;
+    height: 100%;
+    margin: -8px -8px;
+    padding: 0.5em 0.5em;
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(left, #ffb668 100%, #ffb668 100%), -webkit-linear-gradient(top, #ffb668 100%, #ffb668 100%), -webkit-linear-gradient(left, #ffb668 100%, #ffb668 100%), -webkit-linear-gradient(top, #ffb668 100%, #ffb668 100%);
+    background-image: linear-gradient(to right, #ffb668 100%, #ffb668 100%), linear-gradient(to bottom, #ffb668 100%, #ffb668 100%), linear-gradient(to right, #ffb668 100%, #ffb668 100%), linear-gradient(to bottom, #ffb668 100%, #ffb668 100%);
+    background-size: 100% 8px, 8px 100%, 100% 8px, 8px 100%;/**/
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    -webkit-animation: bg 0.3s linear;
+    animation: bg 0.3s linear;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+/*--------------------------------- 今日推荐*/
+
+ul.today_ul{
+    width: 1270px;
+    height: 500px;
+    margin: 180px auto;
+}
+.today_li{
+	display: inline-block;
+    position: relative;
+    margin: 4px 2px;
+}
+.today_tj{
+    width: 413px; height: 246px;
+}
+.black{/*--统一黑色遮罩，遮罩hover需对应父元素position*/
+	overflow: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:rgba(0, 0, 0, 0.63);
+    width: 100%;
+    height: 100%;
+    transition:all  0.3s linear;
+    text-align: center;
+}
+.black:hover{
+	opacity:1;
+}
+.black span{
+	display: inline-block;
+    color: #BCBCBC;
+    margin:40px 20px 20px 20px;
+}
+
+.bt{ /*      统一标题样式*/
+    color: #777470;
+    margin: 28px;
+}
+.black .to_wz{
+    text-align: center;
+}
+.black h2{
+    color: #fff;
+    margin-top:30px;
+}
+.fdkk{/*放大图限制*/
+	overflow: hidden;
+    height:100%;
+}
+.fd{/* 放大*/
+	 transition:all 0.3s linear;
+}
+.today_li .fd{
+    width: 413px;
+    height: 246px;
+}
+.today_li :hover .fd{
+	transform:scale(1.2);
+}
+
+.to_center {
+    margin: 1% 45%;
+
+}
+
+/*-----------------------------  -惊艳时光----*/
+.sg{
+    background: #f5f5f5;
+    padding: 60px 20%;
+
+}
+.sg_ul{
+    position: relative;
+    width: 900px;
+    margin: 40px auto;
+    padding: 60px auto;
+}
+.sg_ul .sg_fd-left-top{
+    position:absolute;
+    top: 0;
+    right:0;
+}
+.sg_ul .sg_fd-left-bottom{
+    position:absolute;
+    bottom: 0;
+    right:0;
+}
+.sg_fd-right{
+    position: relative;
+}
+.sg_fd-right .fd{
+    width: 560px;
+    height: 400px;
+}
+.sg_fd-right :hover .fd{
+    transform:scale(1.2);
+}
+
+.sg_fd-right.fdkk {
+    width: 550px;
+}
+
+.center{
+    margin-top:29%;
+/*    transform:scale(1.5);*/
+}
+
+.ti_wz { /*统一位置*/
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 18px;
+    left: 10px;
+    color: #fff;
+    z-index: 2;
+}
+[class^=sg_fd-left]{
+    position: relative;/* importan*/
+    padding: 0;
+}
+[class^=sg_fd-left] .fd{
+    width: 350px;
+    height: 200px;
+}
+
+[class^=sg_fd-left] :hover .fd{
+    transform:scale(1.2);
+}
+/*----------------------------------顽主推荐-*/
+.wzh{
+    margin: 0 auto;
+    width: 1280px;
+    padding-bottom:80px;
+    padding-top:60px;
+}
+.wzh_ul{
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: -2px;
+    padding-top: 20px;
+    height: 320px;
+    overflow-x: scroll;/* -- x轴方向滚动条效果*/
+    white-space: nowrap;/* 内容在一行显示*/
+    overflow-y: hidden;/*y轴方向隐藏*/
+}
+.wz-g {
+    color: darkgray;
+}
+.wzh_li{
+    display: inline-block;
+    position: relative;
+    width: 248px;
+    height:248px;
+    text-align: center;
+    border: 4px solid aliceblue;
+}
+.wzh_li :hover .fd{
+    transform:scale(1.1);
+}
+.wzh_li .face{
+    width: 80px;
+    height:80px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 40px auto 30px auto;
+}
+.border{
+    border: 2px solid aliceblue;
+    transition:all 0.01s linear;
+}
+/*----------------------------------娱乐及以下板块-*/
+.yl{
+    background: #f5f5f5;
+    padding:60px;
+
+
+}
+.yl_ul{
+    margin: 0 auto;
+    width: 1280px;
+
+}
+.yl-wz h2{
+    white-space:pre-wrap;
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 20px;
+
+}
+.yl_li{
+    display: inline-block;
+    width: 310px;
+    margin: 0 3px 30px 3px;
+
+
+}
+.yl_li .fdkk{
+    position: relative;
+}
+.yl_li .fd{
+    width: 310px;
+    height:178px;
+
+}
+.yl_li :hover .fd{
+    transform:scale(1.1);
+}
+
+

@@ -1,0 +1,391 @@
+/*个人主页的css
+ * 韩鸣
+ * 2018.3.26
+ * */
+body {
+	background-image: url(../images/social/home/body_bg_page.jpg);
+	background-color: #ece7e6;
+    background-repeat: no-repeat;
+    background-position: center 0
+}
+.homes {
+	position: relative;
+}
+.homes .top {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 2;
+}
+.homes .top .pic {
+	width: 100px;
+	height: 100px;
+	margin: 48px auto 0;
+	background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+}
+.homes .top .pic img {
+	width: 100%;
+	height: 100%;
+		border-radius: 50%;
+}
+.homes .top .name {
+	text-align: center;
+	margin-top: 6px;
+	color: #FFFFFF;
+}
+.homes .top .name h3 {
+	font-size: 20px;
+	text-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+.homes .top .name span {
+	font-size: 14px;
+	margin-top: 6px;
+}
+.homes .top .guanzhus {
+	text-align: center;
+	margin-top: 15px;
+}
+.homes .top .guanzhus a {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.homes .top .guanzhus a i {
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	width: 24px;
+	height: 24px;
+	background: url(../images/index/icon.png) no-repeat;
+	background-position: -50px -174px;
+	z-index: 100;
+	top: 7px;
+}
+.homes .tab_wrap {
+	background-color: #fff;
+	height: 40px;
+}
+.homes .tab_wrap .tb_tab {
+	width: 60%;
+	margin: 0 auto;
+}
+.homes .tab_wrap .tb_tab .tab_link {
+	position: relative;
+    display: inline-block;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 38px;
+    white-space: nowrap;
+    overflow: hidden
+}
+.homes .tab_wrap .tb_tab .tab_link span.s_txt1 {
+	padding: 0 7px;
+    font-size: 14px;
+}
+.homes .tab_wrap .tb_tab .tab_link span.ani_border {	
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #f7691d;
+    left: 0;
+    opacity: 1;
+    bottom: 0px;
+    z-index: 500;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    overflow: hidden;
+}
+.homes .tab_wrap .tb_tab ul li {
+	float: left;
+	text-align: center;
+	width: 50%;
+	line-height: 40px;
+}
+.homes .tab_wrap .tb_tab ul li a {
+	font-weight: 700;	
+    padding: 0 7px;
+    font-size: 14px;
+}
+.homes .bottom .home_left {
+	width: 330px;
+	margin-right: 20px;
+}
+.homes .bottom .home_left .recard {
+    width: 100%;
+    padding: 12px 0;
+}
+.homes .bottom .home_left .recard ul li {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}
+.homes .bottom .home_left .recard ul li a strong {
+	display: block;
+    margin: 2px 0 6px 0;
+    font-family: Tahoma;
+    font-weight: 400;
+    font-size: 14px;
+}
+.homes .bottom .home_left .recard ul li a span {
+	display: block;
+	font-size: 14px;
+	color: #808080;
+}
+.homes .user-info .user-infos {
+    padding: 16px 16px 10px 16px;
+    font-size: 14px;
+    line-height: 37px;
+}
+.homes .user-info .user-infos .adress ul  li  i {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.homes .user-info .user-infos .adress ul  li  span {
+	padding-left: 10px;
+	width: 243px;
+}
+.homes .user-info .user-infos .adress ul  li  span:last-child {
+	line-height: 20px;
+}
+.homes .user-info a.more {
+	height: 26px;
+	display: block;
+	font-size: 14px;
+	line-height: 26px;
+	text-align: center;
+	margin-top: 5px;
+	border-top: 1px solid #CCCCCC;
+	line-height: 26px;
+}
+.homes .user-info .user-infos .adress ul  li  i img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.homes .user-info .user-infos span {
+	display: inline-block;
+	
+}
+.homes .user-info .home-icon {
+	display: inline-block;
+    width: 86px;
+    height: 28px;
+    margin: 0 10px 0 0;
+	background: url(../images/icon/weiboicon.png) no-repeat;
+	background-position: -425px -50px;
+}
+.homes .message .title,
+.homes .album .title {
+	height: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	padding-left: 10px;
+	font-size: 14px;	
+}
+.homes .home_mian .home_left .album ul {
+	width: 100%;
+	padding: 0 10px 10px;
+}
+.homes .message .pic {
+	width: 288px;
+	height:116px;
+	margin:  0 auto;
+}
+.homes .message .pic img {
+	width: 100%;
+	height: 100%;
+}
+.homes .message .headline {
+	font-weight: 700;
+	font-size: 14px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	text-indent: 5px;
+	padding: 10px 10px;
+	background-color: #f2f2f5;
+	margin-bottom: 5px;
+}
+.homes .message a.more {
+	height: 26px;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 5px;
+	border-top: 1px solid #CCCCCC;
+	line-height: 26px;
+}
+.homes .bottom .album ul li {
+    float: left;
+    height: 92px;
+    width: 92px;
+    margin: 0 6px 6px 0;
+}
+.homes .bottom .album {
+	overflow: hidden;
+}
+.homes .bottom .album  .big_pic {
+    width: 190px;
+    height: 190px;
+    }
+.homes .bottom .album ul li img {
+    width: 100%;
+    height: 100%;
+}
+.homes .home_right {
+	width: 630px;
+    /*margin-right: 20px;*/
+    overflow: hidden;
+}
+.homes .bottom .home_right .contents .detail {
+	float: right;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.homes .bottom .home_right .contents .panl {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 20px 4px;
+}
+.homes .bottom .home_right .contents .panl .headline {
+    word-wrap: break-word;
+    margin-bottom: 2px;
+    color: #808080;
+}
+.homes .bottom .home_right .contents .panl .headline h4 {
+	font-size: 16px;
+	color: #333333;
+	font-weight: 700;
+}
+.homes .bottom .home_right .contents .panl .headline span {
+	font-size: 12px;
+	color: #808080;
+}
+.homes .bottom .home_right .contents .panl .text {
+	padding: 1px 0 3px;
+	font-size: 14px;
+    overflow: hidden;
+    line-height: 30px;
+    color: #333333;
+    word-wrap: break-word;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+}
+.homes .bottom .home_right .contents .panl .user {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 2px solid #333333;
+    border-radius: 35px;
+}
+.homes .bottom .home_right .contents .panl .user img {
+	width: 100%;
+	height: 100%;
+}
+.homes .bottom .home_right .contents .panl .text i {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+	background: url(../images/index/icon.png) no-repeat;
+	background-position: -337px -148px;
+}
+.homes .bottom .home_right .contents .detail .video {
+	
+}
+.homes .bottom .home_right .contents .detail .video img {
+	width: 500px ;
+	height: 280px;
+	vertical-align: top;
+}
+/*tab按钮*/
+/*他的主页*/
+.herhome {
+	display: none;
+}
+/*他的相册*/
+.heralbums {
+	display: none;
+}
+.homes .heralbums {
+	overflow: hidden;
+	padding: 18px;
+	
+}
+.homes .dis {
+	display: block;
+}
+.homes .heralbums .choose {
+    height: 38px;
+    line-height: 38px;
+    color: #808080;
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0 6px;
+    border-color: #f2f2f5;
+}
+
+.homes .heralbums .choose ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.homes .heralbums .albums ul li {
+	position: relative;
+	float: left;
+	width: 230px;
+    height: auto;
+    margin: 2px;
+    background-color: #f2f2f5;
+}
+.homes .heralbums .albums ul li a img {
+	width:100%;
+	height:100%;
+}
+
+
+.feed_action {
+	/*overflow: hidden;*/
+}
+.feed_action ul {
+	border-top: 1px solid #f2f2f5;
+    zoom: 1;
+}
+.feed_action ul li {
+	float: left;
+	width: 24%;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    margin-left: -1px;
+    font-size: 12px
+}
+.feed_action ul li a {
+	display: block;
+    color: #333;
+}
+.feed_action ul li a:hover {
+	color: #eb7350;
+}
+.feed_action ul li a span {
+	display: block;
+    height: 22px;
+    line-height: 22px;
+    margin: 7px 0;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #d9d9d9;
+}
+.feed_action ul li a em {
+	margin-left: 2px;
+}

@@ -1,0 +1,131 @@
+ /*活动详情副业的*/
+.ui_title_wrap sup {
+	background: #ffa539;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	margin: 0 0 0 5px;
+	padding: 0 5px
+}
+.shiyong_rule {
+	font-size: 14px
+}
+
+.shiyong_rule p {
+	padding: 5px 0
+}
+.shiyong_winlist li {
+	float: left;
+	margin: 10px 0;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 91px
+}
+
+.shiyong_winlist li img {
+	background: #f2f2f2 url("http://static.meishichina.com/v6/img/loading-16-16.gif") no-repeat scroll center center;
+	display: block;
+	height: 48px;
+	margin: 1px auto;
+	width: 48px;
+	border-radius: 50%
+}
+
+.shiyong_winlist li p b {
+	color: #ba2020
+}
+
+.zhen_tougao {
+	font-size: 14px;
+	background: #f7f7f7;
+	padding: 20px;
+	line-height: 30px;
+	text-align: center
+}
+
+.zhen_tougao .left {
+	font-size: 16px;
+	color: #666;
+	width: 460px
+}
+
+.zhen_tougao .left span {
+	color: #999;
+	font-size: 14px;
+}
+
+.zhen_tougao .right {
+	width: 110px;
+}
+
+.zhen_tougao .right a {
+	color: #6599ff;
+}
+.shiyong_winlist {
+	margin-top: 20px;
+}
+/*active_datiala.html*/
+.wrap .w {
+	background-color: #fff;
+	padding: 10px 0;
+}
+
+.w {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.w {
+	width:990px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.nav_wrap2 {
+	height: 34px;
+	border-bottom: 1px solid #ffa539;
+	border-top: 1px solid #ffa539;
+	width: 990px;
+	margin: 20px auto;
+}
+
+.nav_wrap2 li {
+	float: left;
+	padding: 0 10px;
+}
+
+.nav_wrap2 a {
+	display: block;
+	padding: 0 3px;
+	height: 34px;
+	font-size: 14px;
+	line-height: 34px;
+}
+
+.nav_wrap2 a.on {
+	color: #ffa539;
+}
+
+.nav_wrap2 a:hover {
+	color: #ffa539;
+	text-decoration: none;
+}
+
+.nav_wrap2 .right {
+	float: right;
+	position: relative
+}
+/*active_detail01.html*/
+
+.lottery-d-info {
+	font-size: 14px;
+	background: #f7f7f7;
+	padding: 20px
+}
+
+.lottery-d-info span {
+	color: #6599ff
+}
+
+
